@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Exercise</title>
+</head>
+<body>
+
+{% for i in exercise %}
+    <h2><a href="#">{{ i.caption }}</a></h2>
+{% endfor %}
+
+<h2><a href="{% url 'create_exercise' %}">Upload Exercise</a></h2>
+
+
+</body>
+</html>
